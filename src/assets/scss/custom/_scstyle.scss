@@ -19,6 +19,8 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  color: #194B46;
+  font-weight: bold;
 }
 
 h2,
@@ -75,6 +77,12 @@ video {
       }
       @include breakpoint (small only) {
         padding: 0.6rem 0.5rem;
+      }
+      &.button-main {
+        color: $white;
+      }
+      &.button-main:hover {
+        color: $black;
       }
     }
   }
@@ -133,13 +141,30 @@ video {
 //homepage
 
 .header-section {
-  padding: 4.3rem 0 1rem;
+  padding: 4.7rem 0 4.7rem;
+  background-color: $cream;
+      border-bottom: 4px solid $clearwater;
 }
 
 .featured-block {
   border-top: 5px solid $success-color;
-  background-color: lighten($clearwater, 5%)
+  background-color: lighten($clearwater, 5%);
 }
+
+// .body-cream {
+//   background-color: $white;
+// }
+// .body-wht {
+//     background-color: $white;
+//     img.image-margin {
+//       margin: -2em;
+//       width: 60%;
+//     }
+//   }
+// .featured-block-lght {
+//   background-color: $cream;
+//   padding-bottom: 3em;
+// }
 
 .featured-section {
   padding-top: 4rem;
@@ -356,14 +381,9 @@ video {
     color: #666;
   }
 
-  h2.large-heading {
-    font-size: 4em;
-    xolor: #333333;
-  }
-
-  h3 {
-    font-weight: normal;
-  }
+  // h3 {
+  //   font-weight: normal;
+  // }
 
   section {
     margin: 0 0 5rem;
@@ -386,6 +406,11 @@ video {
   }
 }
 // custom elements
+
+h2.large-heading {
+  font-size: 4em;
+  color: #333333;
+}
 
 .caption {
   padding: 0.5rem 0 0;
@@ -459,13 +484,16 @@ video {
 
 .button-main {
   background-color: $forest;
-  color: white !important;
+  color: white;
   &:hover {
     border: 1px solid $clearwater;
     background-color: $clearwater;
     color: #000000;
   }
 }
+// .top-bar .top-bar-right a.main-button {
+//   color: $white;
+// }
 
 .button {
   text-decoration: none;
@@ -672,4 +700,18 @@ img.hr-neon {
       z-index: 1;
     }
   }
+}
+
+.callout-fluid {
+  background-color: $cream;
+  padding: 4em;
+  margin-bottom: -2em;
+  p {
+    font-size: 1.5rem;
+    color: #194B46;
+  }
+}
+
+.border-dashed {
+  border-bottom:2px dashed #f3f3f3;
 }
