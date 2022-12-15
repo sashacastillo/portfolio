@@ -47,7 +47,8 @@ p {
 }
 
 p.lead {
-  font-family: 'Source Sans Pro', sans-serif;
+  // font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'PT Serif', serif;
 }
 
 a {
@@ -77,6 +78,7 @@ video {
       }
       @include breakpoint (small only) {
         padding: 0.6rem 0.5rem;
+        font-size: 0.9em;
       }
       &.button-main {
         color: $white;
@@ -92,8 +94,9 @@ video {
     top: 0;
     left: 0;
     margin: -0.2rem 0 0 -2.4rem;
-    @include breakpoint(medium down) {
-      width: 200px;
+    @include breakpoint(small only) {
+      width: 190px;
+      margin: -0.2rem 0 0 -3rem;
     }
   }
 
@@ -142,12 +145,14 @@ video {
 
 .header-section {
   padding: 4.7rem 0 4.7rem;
-  background-color: $cream;
-      border-bottom: 4px solid $clearwater;
+  // background-color: $cream;
+  background-size: cover;
+  background-image: url("../../assets/img/header-pattern.svg");
+      // border-bottom: 4px solid $clearwater;
 }
 
 .featured-block {
-  border-top: 5px solid $success-color;
+  // border-top: 5px solid $success-color;
   background-color: lighten($clearwater, 5%);
 }
 
@@ -326,8 +331,10 @@ video {
       }
 
       .overflow-cell img {
-        margin-top: -30rem;
-        width: 55%;
+        // margin-top: -30rem;
+        // width: 55%;
+        margin-top: -25rem;
+        width: 50%;
         float: right;
       }
     }
@@ -706,6 +713,9 @@ img.hr-neon {
   background-color: $cream;
   padding: 4em;
   margin-bottom: -2em;
+  @include breakpoint(small only) {
+    padding: 2em;
+  }
   p {
     font-size: 1.5rem;
     color: #194B46;
